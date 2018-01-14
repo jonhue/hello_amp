@@ -34,6 +34,8 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'sentry-raven', '~> 2.7'
+
 group :development, :test do
     gem 'byebug', '~> 9.0'
     # Adds support for Capybara system testing and selenium driver
