@@ -37,16 +37,34 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '~> 2.13'
-  gem 'selenium-webdriver'
+    gem 'byebug', '~> 9.0'
+    # Adds support for Capybara system testing and selenium driver
+    gem 'capybara', '~> 2.15'
+    gem 'selenium-webdriver', '~> 3.8'
 end
 
 group :development do
-  # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
-  gem 'web-console', '>= 3.3.0'
+    gem 'web-console', '~> 3.5'
+    gem 'pry-rails', '~> 0.3'
+
+    # Errors
+    gem 'better_errors', '~> 2.3'
+    gem 'binding_of_caller', '~> 0.7'
+
+    # Security
+    gem 'brakeman', '~> 3.7', require: false
+
+    # Code
+    gem 'rubocop', '~> 0.51', require: false
+
+    # Database
+    gem 'mysql2', '~> 0.4'
+    gem 'lol_dba', '~> 2.1', require: false
+end
+
+group :production do
+    gem 'pg', '~> 0.21'
+    gem 'rack-timeout', '~> 0.4'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
