@@ -40,7 +40,7 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
-    amp-html (1.0.1)
+    amp-html (1.1.0)
       actionpack (>= 5.0)
       mozaic (~> 1.2)
       railties (>= 5.0)
@@ -218,7 +218,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
-  amp-html (~> 1.0)
+  amp-html (~> 1)
   better_errors (~> 2.3)
   binding_of_caller (~> 0.7)
   brakeman (~> 3.7)

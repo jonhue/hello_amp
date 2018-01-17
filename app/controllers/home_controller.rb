@@ -1,11 +1,11 @@
 class HomeController < ApplicationController
 
     def index
-        params[:amp] = true if request.original_url.include?('/amp')
+        amp_path
     end
 
     def amp
-        params[:amp] = true
+        amp = true
     end
 
 end
