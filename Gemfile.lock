@@ -90,7 +90,7 @@ GEM
     jbuilder (2.7.0)
       activesupport (>= 4.2.0)
       multi_json (>= 1.2)
-    lol_dba (2.1.4)
+    lol_dba (2.1.5)
       actionpack (>= 3.0)
       activerecord (>= 3.0)
       railties (>= 3.0)
