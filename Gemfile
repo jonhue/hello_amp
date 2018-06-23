@@ -39,7 +39,7 @@ gem 'sentry-raven', '~> 2.7'
 group :development, :test do
     gem 'byebug', '~> 10.0'
     # Adds support for Capybara system testing and selenium driver
-    gem 'capybara', '~> 2.15'
+    gem 'capybara', '~> 3.2'
     gem 'selenium-webdriver', '~> 3.8'
 end
 
