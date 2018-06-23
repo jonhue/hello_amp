@@ -52,7 +52,7 @@ group :development do
     gem 'binding_of_caller', '~> 0.7'
 
     # Security
-    gem 'brakeman', '~> 3.7', require: false
+    gem 'brakeman', '~> 4.3', require: false
 
     # Code
     gem 'rubocop', '~> 0.51', require: false
