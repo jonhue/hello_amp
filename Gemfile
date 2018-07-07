@@ -37,34 +37,34 @@ gem 'jbuilder', '~> 2.5'
 gem 'sentry-raven', '~> 2.7'
 
 group :development, :test do
-    gem 'byebug', '~> 9.0'
-    # Adds support for Capybara system testing and selenium driver
-    gem 'capybara', '~> 2.15'
-    gem 'selenium-webdriver', '~> 3.8'
+  gem 'byebug', '~> 9.0'
+  # Adds support for Capybara system testing and selenium driver
+  gem 'capybara', '~> 2.15'
+  gem 'selenium-webdriver', '~> 3.8'
 end
 
 group :development do
-    gem 'web-console', '~> 3.5'
-    gem 'pry-rails', '~> 0.3'
+  gem 'web-console', '~> 3.5'
+  gem 'pry-rails', '~> 0.3'
 
-    # Errors
-    gem 'better_errors', '~> 2.3'
-    gem 'binding_of_caller', '~> 0.7'
+  # Errors
+  gem 'better_errors', '~> 2.3'
+  gem 'binding_of_caller', '~> 0.7'
 
-    # Security
-    gem 'brakeman', '~> 3.7', require: false
+  # Security
+  gem 'brakeman', '~> 3.7', require: false
 
-    # Code
-    gem 'rubocop', '~> 0.51', require: false
+  # Code
+  gem 'rubocop', '~> 0.51', require: false
 
-    # Database
-    gem 'mysql2', '~> 0.4'
-    gem 'lol_dba', '~> 2.1', require: false
+  # Database
+  gem 'mysql2', '~> 0.4'
+  gem 'lol_dba', '~> 2.1', require: false
 end
 
 group :production do
-    gem 'pg', '~> 0.21'
-    gem 'rack-timeout', '~> 0.4'
+  gem 'pg', '~> 0.21'
+  gem 'rack-timeout', '~> 0.4'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
