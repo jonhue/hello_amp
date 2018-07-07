@@ -1,15 +1,15 @@
 development:
-    adapter: mysql2
-    encoding: utf8
-    username: root
-    password: 0402Jonas
-    port: 3306
-    database: hello_amp_development
+  adapter: mysql2
+  encoding: utf8
+  username: <%= Rails.application.credentials.development[:database][:username] %>
+  password: <%= Rails.application.credentials.development[:database][:password] %>
+  port: 3306
+  database: hello_amp_development
 
 test:
-    adapter: mysql2
-    encoding: utf8
-    username: root
-    password: 0402Jonas
-    port: 3306
-    database: hello_amp_test
+  adapter: mysql2
+  encoding: utf8
+  username: <%= Rails.application.credentials.test[:database][:username] %>
+  password: <%= Rails.application.credentials.test[:database][:password] %>
+  port: 3306
+  database: hello_amp_test
