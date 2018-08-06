@@ -1,8 +1,13 @@
 <%= amp_mozaic do %>
-  <%= link_to 'Welcome (without AMP)', root_url %><br />
-  <%= link_to 'Welcome (with AMP)', root_url(amp: true) %><br />
-  <%= link_to 'Always AMP', always_amp_url(amp: false) %><br />
-  <%= link_to 'Home (without AMP)', home_url %><br />
-  <%= link_to 'Home (with AMP)', amp_home_url %><br />
-  <%= yield %>
+  <nav>
+    <span><%= title %></span>
+    <%= link_to 'Regular Web', root_url %>
+    <%= link_to 'AMP Params', root_url(amp: true) %>
+    <%= link_to 'Always AMP', always_amp_url(amp: false) %>
+    <%= link_to 'Regular Web', home_url %>
+    <%= link_to 'AMP in Path', amp_home_url %>
+  </nav>
+  <article>
+    <%= yield %>
+  </article>
 <% end %>
